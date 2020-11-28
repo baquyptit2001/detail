@@ -1,0 +1,18 @@
+$(function(){
+    $(".btn-re").click(function(){
+        $(".re").removeClass("hide-cnt");
+        $(".re").addClass("show-cnt");
+        $(".des").addClass("hide-cnt");
+        $(".des").removeClass("show-cnt");
+        $(".btn-re").addClass("btn-bor");
+        $(".btn-des").removeClass("btn-bor");
+    });
+    $(".btn-des").click(function(){
+        $(".des").removeClass("hide-cnt");
+        $(".des").addClass("show-cnt");
+        $(".re").addClass("hide-cnt");
+        $(".re").removeClass("show-cnt");
+        $(".btn-des").addClass("btn-bor");
+        $(".btn-re").removeClass("btn-bor");
+    });
+})
